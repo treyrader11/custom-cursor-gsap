@@ -26,8 +26,6 @@ export default function Cursor() {
   };
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
     if (cursor.current && follower.current) {
       gsap.set(cursor.current, {
         xPercent: 100,
